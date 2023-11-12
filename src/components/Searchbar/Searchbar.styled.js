@@ -1,11 +1,15 @@
-import { Form as FormikForm, Field as FormikField } from 'formik';
+import {
+  Form as FormikForm,
+  Field as FormikField,
+  ErrorMessage as FormikError,
+} from 'formik';
 import styled from 'styled-components';
 
 export const Header = styled.header`
   top: 0;
   left: 0;
   position: sticky;
-  z-index: 1100;
+  z-index: 100;
   min-height: 64px;
   margin-bottom: 32px;
   padding-right: 24px;
@@ -44,4 +48,11 @@ export const Button = styled.button`
   border: 0;
   cursor: pointer;
   outline: none;
+`;
+
+export const ErrorMessage = styled(FormikError)`
+  display: block;
+  text-align: center;
+  margin: 8px auto 0;
+  font-size: 14px;
 `;

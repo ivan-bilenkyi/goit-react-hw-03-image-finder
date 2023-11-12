@@ -28,10 +28,9 @@ export const GlobalStyle = createGlobalStyle`
 
   img {
     display: block;
-    width: 100%;
-    object-fit: cover;
-    /* max-height: 280px; */
-    height:100%
+    max-width: 100%; 
+    height: auto; 
+    aspect-ratio: 4 / 3;
   }
 
   p{
